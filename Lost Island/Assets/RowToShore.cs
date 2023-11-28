@@ -11,6 +11,7 @@ public class RowToShore : MonoBehaviour
     public XRController controller;
     public float rayLength = 10f;
 
+
     private void Start()
     {
         // Attempt to find an XRController component on this GameObject
@@ -39,6 +40,7 @@ public class RowToShore : MonoBehaviour
             {
                 Debug.Log("Button press works");
                 TryDestroyObject();
+
             } 
         } else
         {
