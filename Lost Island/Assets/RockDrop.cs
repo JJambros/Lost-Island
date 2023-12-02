@@ -7,7 +7,7 @@ public class RockDrop : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rock")) // Adjust the tag based on your setup
+        if (other.CompareTag("Rock")) 
         {
             
         }

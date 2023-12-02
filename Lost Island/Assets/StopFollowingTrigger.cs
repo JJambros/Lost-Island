@@ -8,7 +8,7 @@ public class StopFollowingTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("MainCamera")) // Adjust the tag based on your setup
+        if (other.CompareTag("MainCamera")) 
         {
             Debug.Log("Trigger fired");
             followObjectScript.StopFollowing();

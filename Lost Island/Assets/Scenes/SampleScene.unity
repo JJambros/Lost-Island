@@ -8987,6 +8987,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6899781153407400490, guid: 9753f860076a70942b7417f548ddde2a, type: 3}
   m_PrefabInstance: {fileID: 1699661666}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &418341683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418341684}
+  m_Layer: 0
+  m_Name: Attach Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &418341684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418341683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.003, y: 0, z: -0.307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1593228306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &427359887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9685,6 +9716,38 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &459399530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1776079692457040, guid: 53c15703dacf1c948b5b3211c0c9a311, type: 3}
+  m_PrefabInstance: {fileID: 1058064815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &459399535
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459399530}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &459690341
 GameObject:
   m_ObjectHideFlags: 0
@@ -17505,7 +17568,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1776079692457040, guid: 53c15703dacf1c948b5b3211c0c9a311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 459399535}
   m_SourcePrefab: {fileID: 100100000, guid: 53c15703dacf1c948b5b3211c0c9a311, type: 3}
 --- !u!1001 &1065938613
 PrefabInstance:
@@ -24632,7 +24698,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -28042,7 +28108,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 491345847988844945, guid: 0364b6d6608ccec43a15f0fd7290ccb1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 418341684}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3497825398378072962, guid: 0364b6d6608ccec43a15f0fd7290ccb1, type: 3}
       insertIndex: -1
@@ -28161,7 +28230,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 418341684}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -28259,6 +28328,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1593228306 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 491345847988844945, guid: 0364b6d6608ccec43a15f0fd7290ccb1, type: 3}
+  m_PrefabInstance: {fileID: 1593228299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1603448553
 PrefabInstance:
   m_ObjectHideFlags: 0
